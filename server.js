@@ -8,7 +8,7 @@ const { logger } = require('./middleware/logger')
 const errorHandler = require('./middleware/errorHandler')
 const cookieParser = require('cookie-parser')
 const cors = require('cors')
-const corsOptions = require('./config/corsOptions')
+// const corsOptions = require('./config/corsOptions')
 const connectDB = require('./config/dbConn')
 const mongoose = require('mongoose')
 const { logEvents } = require('./middleware/logger')
@@ -24,7 +24,8 @@ app.use(express.json())
 
 app.use(cookieParser())
 
-app.use(cors(corsOptions))
+app.use(cors({ origin: "https://technotes-gzcj.onrender.com/", credentials: true }))
+// app.use(cors(corsOptions))
 
 app.use(methodOverride("_method"));
 
