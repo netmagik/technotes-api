@@ -12,7 +12,6 @@ const corsOptions = require('./config/corsOptions')
 const connectDB = require('./config/dbConn')
 const mongoose = require('mongoose')
 const { logEvents } = require('./middleware/logger')
-const methodOverride = require('method-override')
 
 console.log(process.env.NODE_ENV)
 
@@ -25,8 +24,6 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.use(cors(corsOptions))
-
-app.use(methodOverride("_method"));
 
 app.use('/', express.static(path.join(__dirname, 'public')))
 
