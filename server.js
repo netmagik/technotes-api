@@ -24,7 +24,7 @@ app.use(express.json())
 
 app.use(cookieParser())
 
-app.use(cors({ origin: "https://technotes-gzcj.onrender.com/", credentials: true }))
+app.use(cors())
 // app.use(cors(corsOptions))
 
 app.use(methodOverride("_method"));
