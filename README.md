@@ -30,7 +30,7 @@ git clone https://github.com/netmagik/technotes-api
 
 Go to the project directory
 ```
-cd events
+cd server
 ```
 Install dependencies
 ```
