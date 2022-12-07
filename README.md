@@ -9,6 +9,11 @@ Managers and Admins can assign notes to a specific employee, and they can revoke
 Only Managers and Admins can create a New User
 
 #### **Live Preview:**  https://technotes-gzcj.onrender.com/
+I created a test user:
+**username:** TestUser
+**password:** hellouser
+
+---
 
 -   Based on [MERN Stack Tutorial](https://www.youtube.com/watch?v=H-9l-gTq-C4) by Dave Gray
   
